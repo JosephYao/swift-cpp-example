@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E519E09C5DB17DD67E45F5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E519E09CDC4ECE3389455B1C /* Assets.xcassets */; };
+		E519E1DD47A2E475E3E6D310 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E10A2EF8171FC822764C /* ContentView.swift */; };
+		E519E1FFD97A8D01AC1A378E /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E83A3706A23C1B54A753 /* Tests_iOS.swift */; };
+		E519E368B77BA9B29B85F7E3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E6E48C5D174757C8FC1A /* Persistence.swift */; };
+		E519E71CDE34E198D464C853 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E6E48C5D174757C8FC1A /* Persistence.swift */; };
+		E519E7E032BA6DF24675FA8C /* swift_otpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519EBA88DB40A5284188E53 /* swift_otpApp.swift */; };
+		E519E9BDD506E88985FAFE58 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E40824AFE2FAB5327011 /* Tests_macOS.swift */; };
+		E519EA9A10298B2ED501EB01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E10A2EF8171FC822764C /* ContentView.swift */; };
+		E519EB6087166840B868B283 /* swift_otp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E519EF17046070BA8708028E /* swift_otp.xcdatamodeld */; };
+		E519ED70F8492919F657AA7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E519E09CDC4ECE3389455B1C /* Assets.xcassets */; };
+		E519EE2C95EE4ED6FB835F96 /* swift_otp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E519EF17046070BA8708028E /* swift_otp.xcdatamodeld */; };
+		E519EF9080898FD4EC775F2C /* swift_otpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519EBA88DB40A5284188E53 /* swift_otpApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E519E2CC8F0E38A513C67AEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E519EC8586697AA8C7CD2A8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E519E81AD36D0E922D904155;
+			remoteInfo = "swift-otp (iOS)";
+		};
+		E519EA39399E03A5B7562772 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E519EC8586697AA8C7CD2A8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E519E0F1F58029BA935C0738;
+			remoteInfo = "swift-otp (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E519E09CDC4ECE3389455B1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E519E0DE08A68886533724DA /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		E519E10A2EF8171FC822764C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E519E17DD4432F3FEED53A55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		E519E40824AFE2FAB5327011 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		E519E4AD869A0E41E3BD36DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		E519E540F01ECA562C5BBA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		E519E60C285B00451168E97E /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E519E6E48C5D174757C8FC1A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		E519E814BDE47198DDF9A283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		E519E83A3706A23C1B54A753 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		E519E94CED243B1AC0F1366F /* swift-otp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-otp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E519EAE9D34644EEA2C5DF07 /* swift-otp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-otp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E519EBA88DB40A5284188E53 /* swift_otpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_otpApp.swift; sourceTree = "<group>"; };
+		E519ED42113685119D7EDF0E /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
+		E519EDB49C6B7B75DF34C6CB /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E519E0A46F154E4C7EDAA1F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E519E401746A02647DA04DA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E519EAE8745E72D99CCF4E46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E519EE0FB731531517A6BB36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E519E2704B911FCECB61FF4C /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				E519E17DD4432F3FEED53A55 /* Info.plist */,
+				E519E0DE08A68886533724DA /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		E519E28144CDF0ABC9CFF5FF /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				E519E814BDE47198DDF9A283 /* Info.plist */,
+				E519E40824AFE2FAB5327011 /* Tests_macOS.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		E519E37758A7572F554D2121 = {
+			isa = PBXGroup;
+			children = (
+				E519E727ECB9A1556DFA60F6 /* Products */,
+				E519E6BC51B92829831A53AC /* Shared */,
+				E519E80EFA91A98062EE7739 /* iOS */,
+				E519E2704B911FCECB61FF4C /* macOS */,
+				E519EACBF3A6154E216A488B /* Tests iOS */,
+				E519E28144CDF0ABC9CFF5FF /* Tests macOS */,
+			);
+			sourceTree = "<group>";
+		};
+		E519E6BC51B92829831A53AC /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E519E09CDC4ECE3389455B1C /* Assets.xcassets */,
+				E519EF17046070BA8708028E /* swift_otp.xcdatamodeld */,
+				E519EBA88DB40A5284188E53 /* swift_otpApp.swift */,
+				E519E10A2EF8171FC822764C /* ContentView.swift */,
+				E519E6E48C5D174757C8FC1A /* Persistence.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		E519E727ECB9A1556DFA60F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E519EAE9D34644EEA2C5DF07 /* swift-otp.app */,
+				E519E94CED243B1AC0F1366F /* swift-otp.app */,
+				E519EDB49C6B7B75DF34C6CB /* Tests iOS.xctest */,
+				E519E60C285B00451168E97E /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E519E80EFA91A98062EE7739 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E519E4AD869A0E41E3BD36DA /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		E519EACBF3A6154E216A488B /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E519E540F01ECA562C5BBA26 /* Info.plist */,
+				E519E83A3706A23C1B54A753 /* Tests_iOS.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E519E0F1F58029BA935C0738 /* swift-otp (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E519ED5AB0D76FA517A7659C /* Build configuration list for PBXNativeTarget "swift-otp (macOS)" */;
+			buildPhases = (
+				E519EC246296ECDB314916BE /* Sources */,
+				E519EE0FB731531517A6BB36 /* Frameworks */,
+				E519E4821F06D866C58590FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swift-otp (macOS)";
+			productName = "swift-otp (macOS)";
+			productReference = E519E94CED243B1AC0F1366F /* swift-otp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E519E1DFBB29EDDAB9E27778 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E519E3F1477E6036B5840505 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				E519E613B6591C1F005FFE61 /* Sources */,
+				E519E401746A02647DA04DA9 /* Frameworks */,
+				E519EF8C395485E1B58F4116 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E519EF861269E90ABAF73D5A /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = E519EDB49C6B7B75DF34C6CB /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E519E4BD2797E447DC38761C /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E519EA23226D1C3EC26AA912 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				E519E64E2B41B18054C23DCD /* Sources */,
+				E519EAE8745E72D99CCF4E46 /* Frameworks */,
+				E519E285EFC41D32186C8D4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E519ED048F4105CA03BE1435 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = E519E60C285B00451168E97E /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E519E81AD36D0E922D904155 /* swift-otp (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E519E2BCA9D6EC7C4134D5AE /* Build configuration list for PBXNativeTarget "swift-otp (iOS)" */;
+			buildPhases = (
+				E519EC9682F39025DB91552F /* Sources */,
+				E519E0A46F154E4C7EDAA1F9 /* Frameworks */,
+				E519E8C0CDA6DBC274A6BF97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swift-otp (iOS)";
+			productName = "swift-otp (iOS)";
+			productReference = E519EAE9D34644EEA2C5DF07 /* swift-otp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E519EC8586697AA8C7CD2A8E /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = E519E1071EF5D863FC5D56BA /* Build configuration list for PBXProject "swift-otp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E519E37758A7572F554D2121;
+			productRefGroup = E519E727ECB9A1556DFA60F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E519E81AD36D0E922D904155 /* swift-otp (iOS) */,
+				E519E0F1F58029BA935C0738 /* swift-otp (macOS) */,
+				E519E1DFBB29EDDAB9E27778 /* Tests iOS */,
+				E519E4BD2797E447DC38761C /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E519E285EFC41D32186C8D4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E519E4821F06D866C58590FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E519E09C5DB17DD67E45F5E0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E519E8C0CDA6DBC274A6BF97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E519ED70F8492919F657AA7A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E519EF8C395485E1B58F4116 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E519E613B6591C1F005FFE61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E519E1FFD97A8D01AC1A378E /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E519E64E2B41B18054C23DCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E519E9BDD506E88985FAFE58 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E519EC246296ECDB314916BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E519EE2C95EE4ED6FB835F96 /* swift_otp.xcdatamodeld in Sources */,
+				E519E7E032BA6DF24675FA8C /* swift_otpApp.swift in Sources */,
+				E519EA9A10298B2ED501EB01 /* ContentView.swift in Sources */,
+				E519E368B77BA9B29B85F7E3 /* Persistence.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E519EC9682F39025DB91552F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E519EB6087166840B868B283 /* swift_otp.xcdatamodeld in Sources */,
+				E519EF9080898FD4EC775F2C /* swift_otpApp.swift in Sources */,
+				E519E1DD47A2E475E3E6D310 /* ContentView.swift in Sources */,
+				E519E71CDE34E198D464C853 /* Persistence.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E519ED048F4105CA03BE1435 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E519E0F1F58029BA935C0738 /* swift-otp (macOS) */;
+			targetProxy = E519EA39399E03A5B7562772 /* PBXContainerItemProxy */;
+		};
+		E519EF861269E90ABAF73D5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E519E81AD36D0E922D904155 /* swift-otp (iOS) */;
+			targetProxy = E519E2CC8F0E38A513C67AEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E519E2778CB1C882085C557D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.odd-e.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "swift-otp (iOS)";
+			};
+			name = Release;
+		};
+		E519E4151F4A2C0837192374 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.odd-e.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "swift-otp (iOS)";
+			};
+			name = Debug;
+		};
+		E519E4E5A899A2575851291E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.odd-e.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "swift-otp (macOS)";
+			};
+			name = Release;
+		};
+		E519E5F0EBB055C895D7195D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.odd-e.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "swift-otp (macOS)";
+			};
+			name = Debug;
+		};
+		E519E86CAE4995D21EDEA81E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E519EB771CA06ED2ED526959 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E519ECB02D559EC39AB46FF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.odd-e.swift-otp";
+				PRODUCT_NAME = "swift-otp";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E519ED1B125A6736EB42FD1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.odd-e.swift-otp";
+				PRODUCT_NAME = "swift-otp";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E519EEF2FC565ED4FF8CA70C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.odd-e.swift-otp";
+				PRODUCT_NAME = "swift-otp";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E519EFD3294969C2BC13248B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.odd-e.swift-otp";
+				PRODUCT_NAME = "swift-otp";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E519E1071EF5D863FC5D56BA /* Build configuration list for PBXProject "swift-otp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E519EB771CA06ED2ED526959 /* Debug */,
+				E519E86CAE4995D21EDEA81E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E519E2BCA9D6EC7C4134D5AE /* Build configuration list for PBXNativeTarget "swift-otp (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E519EEF2FC565ED4FF8CA70C /* Debug */,
+				E519ECB02D559EC39AB46FF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E519E3F1477E6036B5840505 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E519E4151F4A2C0837192374 /* Debug */,
+				E519E2778CB1C882085C557D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E519EA23226D1C3EC26AA912 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E519E5F0EBB055C895D7195D /* Debug */,
+				E519E4E5A899A2575851291E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E519ED5AB0D76FA517A7659C /* Build configuration list for PBXNativeTarget "swift-otp (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E519ED1B125A6736EB42FD1E /* Debug */,
+				E519EFD3294969C2BC13248B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E519EF17046070BA8708028E /* swift_otp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E519ED42113685119D7EDF0E /* Shared.xcdatamodel */,
+			);
+			currentVersion = E519ED42113685119D7EDF0E /* Shared.xcdatamodel */;
+			path = swift_otp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E519EC8586697AA8C7CD2A8E /* Project object */;
+}
