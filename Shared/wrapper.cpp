@@ -7,7 +7,12 @@
 
 #include "Parse.h"
 
-extern "C" const char * GetAppPath() {
-    return MiniApp::Parse::ParseFile("")->GetAppPath().c_str();
+extern "C" {
+const void * ParseFile(const char * path) {
+    return (void *) MiniApp::Parse::ParseFile(path).get();
+};
+const char * GetAppPath(void * miniAppInfo) {
+    return ((MiniApp::MiniAppInfo *) miniAppInfo)->GetAppPath().c_str();
+};
 }
 
