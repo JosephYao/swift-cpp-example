@@ -4,3 +4,4 @@
 
 const void * MiniAppInfo_ParseFile(const char * path);
 const char * MiniAppInfo_GetAppPath(const void * miniAppInfo);
+const void * MiniAppInfo_SetAppPath(const void * miniAppInfo, const char * path);

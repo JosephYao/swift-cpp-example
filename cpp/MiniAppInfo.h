@@ -9,6 +9,7 @@ namespace MiniApp {
     class MiniAppInfo {
     public:
         string& GetAppPath();
+        void SetAppPath(string& appPath);
 
     private:
         string appPath = "appPath";
