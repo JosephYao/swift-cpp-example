@@ -19,7 +19,7 @@ struct ContentView: View {
 
     var body: some View {
         Text("Hello iOS world!")
-        Text(isValid("91", "123468").description)
+        Text(String(cString: GetAppPath()))
 //        List {
 //            ForEach(items) { item in
 //                Text("Item yet at \(item.timestamp!, formatter: itemFormatter)")

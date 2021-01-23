@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		745D59DE25BAC19E00628248 /* wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 745D59DD25BAC19E00628248 /* wrapper.cpp */; };
 		745D59DF25BAC19E00628248 /* wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 745D59DD25BAC19E00628248 /* wrapper.cpp */; };
-		745D5A1C25BBCE9F00628248 /* libcore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 745D5A1B25BBCE9F00628248 /* libcore.a */; };
+		745D5A4625BC534F00628248 /* libparse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 745D5A4525BC534F00628248 /* libparse.a */; };
 		E519E09C5DB17DD67E45F5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E519E09CDC4ECE3389455B1C /* Assets.xcassets */; };
 		E519E1DD47A2E475E3E6D310 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E10A2EF8171FC822764C /* ContentView.swift */; };
 		E519E1FFD97A8D01AC1A378E /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E83A3706A23C1B54A753 /* Tests_iOS.swift */; };
@@ -45,12 +45,9 @@
 		745D59DB25BAC19E00628248 /* swift-otp (iOS)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift-otp (iOS)-Bridging-Header.h"; sourceTree = "<group>"; };
 		745D59DC25BAC19E00628248 /* swift-otp (macOS)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift-otp (macOS)-Bridging-Header.h"; sourceTree = "<group>"; };
 		745D59DD25BAC19E00628248 /* wrapper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = wrapper.cpp; sourceTree = "<group>"; };
-		745D59E725BAC23D00628248 /* Context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Context.h; path = "../../cpp-otp/main/Context.h"; sourceTree = "<group>"; };
-		745D59EE25BAC3DC00628248 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Logger.h; path = "../../cpp-otp/main/Logger.h"; sourceTree = "<group>"; };
-		745D59EF25BAC3DC00628248 /* RsaTokenDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RsaTokenDao.h; path = "../../cpp-otp/main/RsaTokenDao.h"; sourceTree = "<group>"; };
-		745D59F025BAC3DC00628248 /* AuthenticationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AuthenticationService.h; path = "../../cpp-otp/main/AuthenticationService.h"; sourceTree = "<group>"; };
-		745D59F125BAC3DC00628248 /* ProfileDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileDao.h; path = "../../cpp-otp/main/ProfileDao.h"; sourceTree = "<group>"; };
-		745D5A1B25BBCE9F00628248 /* libcore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcore.a; path = "../cpp-otp/main/build/libcore.a"; sourceTree = "<group>"; };
+		745D5A4525BC534F00628248 /* libparse.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libparse.a; path = cpp/build/libparse.a; sourceTree = "<group>"; };
+		745D5A4F25BC53A700628248 /* Parse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Parse.h; path = cpp/Parse.h; sourceTree = SOURCE_ROOT; };
+		745D5A5025BC53A700628248 /* MiniAppInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MiniAppInfo.h; path = cpp/MiniAppInfo.h; sourceTree = SOURCE_ROOT; };
 		E519E09CDC4ECE3389455B1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E519E0DE08A68886533724DA /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		E519E10A2EF8171FC822764C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				745D5A1C25BBCE9F00628248 /* libcore.a in Frameworks */,
+				745D5A4625BC534F00628248 /* libparse.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +102,7 @@
 		745D59CC25B9A37100628248 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				745D5A1B25BBCE9F00628248 /* libcore.a */,
+				745D5A4525BC534F00628248 /* libparse.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,11 +141,8 @@
 		E519E6BC51B92829831A53AC /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				745D59F025BAC3DC00628248 /* AuthenticationService.h */,
-				745D59EE25BAC3DC00628248 /* Logger.h */,
-				745D59F125BAC3DC00628248 /* ProfileDao.h */,
-				745D59EF25BAC3DC00628248 /* RsaTokenDao.h */,
-				745D59E725BAC23D00628248 /* Context.h */,
+				745D5A5025BC53A700628248 /* MiniAppInfo.h */,
+				745D5A4F25BC53A700628248 /* Parse.h */,
 				E519E09CDC4ECE3389455B1C /* Assets.xcassets */,
 				E519EF17046070BA8708028E /* swift_otp.xcdatamodeld */,
 				E519EBA88DB40A5284188E53 /* swift_otpApp.swift */,
@@ -596,7 +590,7 @@
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = $SRCROOT/cpp/build;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/cpp/build";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.odd-e.swift-otp";
 				PRODUCT_NAME = "swift-otp";
 				SDKROOT = iphoneos;
@@ -647,7 +641,7 @@
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = $SRCROOT/cpp/build;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/cpp/build";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.odd-e.swift-otp";
 				PRODUCT_NAME = "swift-otp";
 				SDKROOT = iphoneos;
