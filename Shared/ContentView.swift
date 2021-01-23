@@ -8,7 +8,7 @@
 
 import SwiftUI
 import CoreData
-
+	
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
@@ -18,21 +18,23 @@ struct ContentView: View {
     private var items: FetchedResults<Item>
 
     var body: some View {
-        List {
-            ForEach(items) { item in
-                Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-            }
-            .onDelete(perform: deleteItems)
-        }
-        .toolbar {
-            #if os(iOS)
-            EditButton()
-            #endif
-
-            Button(action: addItem) {
-                Label("Add Item", systemImage: "plus")
-            }
-        }
+        Text("Hello iOS world!")
+        Text(isValid("91", "123468").description)
+//        List {
+//            ForEach(items) { item in
+//                Text("Item yet at \(item.timestamp!, formatter: itemFormatter)")
+//            }
+//            .onDelete(perform: deleteItems)
+//        }
+//        .toolbar {
+//            #if os(iOS)
+//            EditButton()
+//            #endif
+//
+//            Button(action: addItem) {
+//                Label("Add Item", systemImage: "plus")
+//            }
+//        }
     }
 
     private func addItem() {
