@@ -13,14 +13,10 @@
 		E519E09C5DB17DD67E45F5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E519E09CDC4ECE3389455B1C /* Assets.xcassets */; };
 		E519E1DD47A2E475E3E6D310 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E10A2EF8171FC822764C /* ContentView.swift */; };
 		E519E1FFD97A8D01AC1A378E /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E83A3706A23C1B54A753 /* Tests_iOS.swift */; };
-		E519E368B77BA9B29B85F7E3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E6E48C5D174757C8FC1A /* Persistence.swift */; };
-		E519E71CDE34E198D464C853 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E6E48C5D174757C8FC1A /* Persistence.swift */; };
 		E519E7E032BA6DF24675FA8C /* swift_otpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519EBA88DB40A5284188E53 /* swift_otpApp.swift */; };
 		E519E9BDD506E88985FAFE58 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E40824AFE2FAB5327011 /* Tests_macOS.swift */; };
 		E519EA9A10298B2ED501EB01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E10A2EF8171FC822764C /* ContentView.swift */; };
-		E519EB6087166840B868B283 /* swift_otp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E519EF17046070BA8708028E /* swift_otp.xcdatamodeld */; };
 		E519ED70F8492919F657AA7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E519E09CDC4ECE3389455B1C /* Assets.xcassets */; };
-		E519EE2C95EE4ED6FB835F96 /* swift_otp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E519EF17046070BA8708028E /* swift_otp.xcdatamodeld */; };
 		E519EF9080898FD4EC775F2C /* swift_otpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519EBA88DB40A5284188E53 /* swift_otpApp.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,13 +52,11 @@
 		E519E4AD869A0E41E3BD36DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		E519E540F01ECA562C5BBA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		E519E60C285B00451168E97E /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E519E6E48C5D174757C8FC1A /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		E519E814BDE47198DDF9A283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		E519E83A3706A23C1B54A753 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		E519E94CED243B1AC0F1366F /* swift-otp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-otp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E519EAE9D34644EEA2C5DF07 /* swift-otp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-otp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E519EBA88DB40A5284188E53 /* swift_otpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_otpApp.swift; sourceTree = "<group>"; };
-		E519ED42113685119D7EDF0E /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		E519EDB49C6B7B75DF34C6CB /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -144,10 +138,8 @@
 				745D5A5025BC53A700628248 /* MiniAppInfo.h */,
 				745D5A4F25BC53A700628248 /* Parse.h */,
 				E519E09CDC4ECE3389455B1C /* Assets.xcassets */,
-				E519EF17046070BA8708028E /* swift_otp.xcdatamodeld */,
 				E519EBA88DB40A5284188E53 /* swift_otpApp.swift */,
 				E519E10A2EF8171FC822764C /* ContentView.swift */,
-				E519E6E48C5D174757C8FC1A /* Persistence.swift */,
 				745D59DD25BAC19E00628248 /* wrapper.cpp */,
 				745D59DB25BAC19E00628248 /* swift-otp (iOS)-Bridging-Header.h */,
 				745D59DC25BAC19E00628248 /* swift-otp (macOS)-Bridging-Header.h */,
@@ -359,10 +351,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E519EE2C95EE4ED6FB835F96 /* swift_otp.xcdatamodeld in Sources */,
 				E519E7E032BA6DF24675FA8C /* swift_otpApp.swift in Sources */,
 				E519EA9A10298B2ED501EB01 /* ContentView.swift in Sources */,
-				E519E368B77BA9B29B85F7E3 /* Persistence.swift in Sources */,
 				745D59DF25BAC19E00628248 /* wrapper.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,10 +361,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E519EB6087166840B868B283 /* swift_otp.xcdatamodeld in Sources */,
 				E519EF9080898FD4EC775F2C /* swift_otpApp.swift in Sources */,
 				E519E1DD47A2E475E3E6D310 /* ContentView.swift in Sources */,
-				E519E71CDE34E198D464C853 /* Persistence.swift in Sources */,
 				745D59DE25BAC19E00628248 /* wrapper.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -729,19 +717,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		E519EF17046070BA8708028E /* swift_otp.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				E519ED42113685119D7EDF0E /* Shared.xcdatamodel */,
-			);
-			currentVersion = E519ED42113685119D7EDF0E /* Shared.xcdatamodel */;
-			path = swift_otp.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = E519EC8586697AA8C7CD2A8E /* Project object */;
 }
