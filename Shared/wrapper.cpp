@@ -8,10 +8,10 @@
 #include "Parse.h"
 
 extern "C" {
-const void * ParseFile(const char * path) {
+const void * MiniAppInfo_ParseFile(const char * path) {
     return (void *) MiniApp::Parse::ParseFile(path).get();
 };
-const char * GetAppPath(void * miniAppInfo) {
+const char * MiniAppInfo_GetAppPath(void * miniAppInfo) {
     return ((MiniApp::MiniAppInfo *) miniAppInfo)->GetAppPath().c_str();
 };
 }

@@ -12,8 +12,8 @@ struct ContentView: View {
 
     var body: some View {
         Text("Hello iOS world!")
-        let miniAppInfo = ParseFile("path")
-        Text(String(cString: GetAppPath(miniAppInfo)))
+        let miniAppInfo = MiniAppInfo_ParseFile("path")
+        Text(String(cString: MiniAppInfo_GetAppPath(miniAppInfo)))
     }
 
 }
