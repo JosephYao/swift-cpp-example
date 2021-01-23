@@ -596,6 +596,7 @@
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = $SRCROOT/cpp/build;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.odd-e.swift-otp";
 				PRODUCT_NAME = "swift-otp";
 				SDKROOT = iphoneos;
@@ -646,7 +647,7 @@
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				"LIBRARY_SEARCH_PATHS[arch=*]" = "/Users/josephyao/Documents/training_workspace/cpp-otp/main/build";
+				LIBRARY_SEARCH_PATHS = $SRCROOT/cpp/build;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.odd-e.swift-otp";
 				PRODUCT_NAME = "swift-otp";
 				SDKROOT = iphoneos;
