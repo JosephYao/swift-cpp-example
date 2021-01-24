@@ -9,13 +9,23 @@
 import SwiftUI
 	
 struct ContentView: View {
+    @State var appPathText = "Please get or set app path";
 
     var body: some View {
-        Text("Hello iOS world!")
-        let miniAppInfo = MiniAppInfo_ParseFile("path")
-        Text(String(cString: MiniAppInfo_GetAppPath(miniAppInfo)))
-        let newMiniAppInfo = MiniAppInfo_SetAppPath(miniAppInfo, "newAppPath")
-        Text(String(cString: MiniAppInfo_GetAppPath(newMiniAppInfo)))
+        Text(appPathText)
+        Button(action: {
+            let miniAppInfo = MiniAppInfo_ParseFile("path")
+            self.appPathText = String(cString: MiniAppInfo_GetAppPath(miniAppInfo))
+        }) {
+            Text("GetAppPath")
+        }
+        Button(action: {
+            let miniAppInfo = MiniAppInfo_ParseFile("path")
+            MiniAppInfo_SetAppPath(miniAppInfo, "newAppPath")
+            self.appPathText = String(cString: MiniAppInfo_GetAppPath(miniAppInfo))
+        }) {
+            Text("SetAppPath")
+        }
     }
 
 }
