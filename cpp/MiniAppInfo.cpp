@@ -9,4 +9,8 @@ namespace MiniApp {
     void MiniAppInfo::SetAppPath(string &appPath) {
         this->appPath = appPath;
     }
+
+    shared_ptr<RouterInfo> MiniAppInfo::GetRouter() {
+        return this->router;
+    }
 }

@@ -18,5 +18,11 @@ void MiniAppInfo_SetAppPath(const void * miniAppInfo, const char * path) {
     string pathStr = path;
     ((MiniApp::MiniAppInfo *) miniAppInfo)->SetAppPath(pathStr);
 };
+const void * MiniAppInfo_GetRouterInfo(const void * miniAppInfo) {
+    return (void *) ((MiniApp::MiniAppInfo *) miniAppInfo)->GetRouter().get();
+};
+const char * RouterInfo_GetEntry(const void * routerInfo) {
+    return ((MiniApp::RouterInfo *) routerInfo)->GetEntry().c_str();
+};
 }
 

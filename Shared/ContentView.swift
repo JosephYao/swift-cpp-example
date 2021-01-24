@@ -10,6 +10,7 @@ import SwiftUI
 	
 struct ContentView: View {
     @State var appPathText = "Please get or set app path";
+    @State var routerEntryText = "Please get or set router entry";
 
     var body: some View {
         Text(appPathText)
@@ -25,6 +26,13 @@ struct ContentView: View {
             self.appPathText = String(cString: MiniAppInfo_GetAppPath(miniAppInfo))
         }) {
             Text("SetAppPath")
+        }
+        Text(routerEntryText)
+        Button(action: {
+            let routerInfo = MiniAppInfo_GetRouterInfo(MiniAppInfo_ParseFile("path"))
+            self.routerEntryText = String(cString: RouterInfo_GetEntry(routerInfo))
+        }) {
+            Text("GetRouterEntry")
         }
     }
 
