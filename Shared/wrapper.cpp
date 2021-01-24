@@ -28,5 +28,26 @@ void RouterInfo_SetEntry(const void * routerInfo, const char * entry) {
     string entryStr = entry;
     ((MiniApp::RouterInfo *) routerInfo)->SetEntry(entryStr);
 };
+struct mapEntry {
+    const char * key;
+    const char * value;
+};
+const mapEntry * MiniAppInfo_GetSubPackages(const void * miniAppInfo) {
+    map<string, string>& subPackages = ((MiniApp::MiniAppInfo *) miniAppInfo)->GetSubPackages();
+    mapEntry * subPackagesArray = new mapEntry[subPackages.size()];
+    auto index = 0;
+//    for(map<string, string>::iterator iter = subPackages.begin(); iter != subPackages.end(); )
+//    {
+//        subPackagesArray[index++] = mapEntry {
+//            .key = iter->first.c_str(),
+//            .value = iter->second.c_str()
+//        };
+//    }
+    subPackagesArray[index] = mapEntry {
+        .key = subPackages.begin()->first.c_str(),
+        .value = subPackages.begin()->second.c_str()
+    };
+    return subPackagesArray;
+};
 }
 

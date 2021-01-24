@@ -13,4 +13,8 @@ namespace MiniApp {
     shared_ptr<RouterInfo> MiniAppInfo::GetRouter() {
         return this->router;
     }
+
+    map<string, string> &MiniAppInfo::GetSubPackages() {
+        return this->subPackages;
+    }
 }

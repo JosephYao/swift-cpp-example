@@ -11,6 +11,7 @@ import SwiftUI
 struct ContentView: View {
     @State var appPathText = "Please get or set app path";
     @State var routerEntryText = "Please get or set router entry";
+    @State var subPackagesText = "";
 
     var body: some View {
         Text(appPathText)
@@ -40,6 +41,16 @@ struct ContentView: View {
             self.routerEntryText = String(cString: RouterInfo_GetEntry(routerInfo))
         }) {
             Text("SetRouterEntry")
+        }
+        Text(subPackagesText)
+        Button(action: {
+            let miniAppInfo = MiniAppInfo_ParseFile("path")
+            let subPackages = MiniAppInfo_GetSubPackages(miniAppInfo) as UnsafePointer<mapEntry>
+            let buffer = UnsafeBufferPointer(start: subPackages, count: 1)
+            let subPackagesArray = Array(buffer)
+            self.subPackagesText = String(cString: subPackagesArray[0].key) + String(cString: subPackagesArray[0].value)	
+        }) {
+            Text("GetSubPackages")
         }
     }
 
