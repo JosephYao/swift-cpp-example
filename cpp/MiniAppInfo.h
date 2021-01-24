@@ -18,7 +18,7 @@ namespace MiniApp {
     private:
         string appPath = "appPath";
         shared_ptr<RouterInfo> router = make_shared<RouterInfo>();
-        map<string, string> subPackages = {{"key", "value"}};
+        map<string, string> subPackages;
     };
 }
 

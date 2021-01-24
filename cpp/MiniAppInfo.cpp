@@ -15,6 +15,7 @@ namespace MiniApp {
     }
 
     map<string, string> &MiniAppInfo::GetSubPackages() {
+        this->subPackages = {{"key", "value"}};
         return this->subPackages;
     }
 }

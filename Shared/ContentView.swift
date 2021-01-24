@@ -48,7 +48,7 @@ struct ContentView: View {
             let subPackages = MiniAppInfo_GetSubPackages(miniAppInfo) as UnsafePointer<mapEntry>
             let buffer = UnsafeBufferPointer(start: subPackages, count: 1)
             let subPackagesArray = Array(buffer)
-            self.subPackagesText = String(cString: subPackagesArray[0].key) + String(cString: subPackagesArray[0].value)	
+            self.subPackagesText = String(cString: subPackagesArray[0].key) + String(cString: subPackagesArray[0].value)
         }) {
             Text("GetSubPackages")
         }
