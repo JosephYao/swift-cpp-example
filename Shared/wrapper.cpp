@@ -24,5 +24,9 @@ const void * MiniAppInfo_GetRouterInfo(const void * miniAppInfo) {
 const char * RouterInfo_GetEntry(const void * routerInfo) {
     return ((MiniApp::RouterInfo *) routerInfo)->GetEntry().c_str();
 };
+void RouterInfo_SetEntry(const void * routerInfo, const char * entry) {
+    string entryStr = entry;
+    ((MiniApp::RouterInfo *) routerInfo)->SetEntry(entryStr);
+};
 }
 

@@ -7,3 +7,4 @@ const char * MiniAppInfo_GetAppPath(const void * miniAppInfo);
 void MiniAppInfo_SetAppPath(const void * miniAppInfo, const char * path);
 const void * MiniAppInfo_GetRouterInfo(const void * miniAppInfo);
 const char * RouterInfo_GetEntry(const void * routerInfo);
+void RouterInfo_SetEntry(const void * routerInfo, const char * entry);
