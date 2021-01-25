@@ -5,8 +5,8 @@ This repo is an example about how swift can call cpp code. It also includes the 
 cd cpp
 mkdir build
 cd build
-cmake .. -DCMAKE_TOOLCHAIN_FILE=./iOS.cmake -DIOS_PLATFORM=SIMULATOR
-make
+cmake .. -G Xcode -DCMAKE_TOOLCHAIN_FILE=../../ios.toolchain.cmake -DPLATFORM=SIMULATOR64
+cmake --build . --config Debug
 ```
 
 2. After build cpp lib, you can run the iOS app and play with it.
