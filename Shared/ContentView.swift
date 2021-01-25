@@ -45,10 +45,11 @@ struct ContentView: View {
         Text(subPackagesText)
         Button(action: {
             let miniAppInfo = MiniAppInfo_ParseFile("path")
-            let subPackages = MiniAppInfo_GetSubPackages(miniAppInfo) as UnsafePointer<mapEntry>
-            let buffer = UnsafeBufferPointer(start: subPackages, count: 1)
-            let subPackagesArray = Array(buffer)
-            self.subPackagesText = String(cString: subPackagesArray[0].key) + String(cString: subPackagesArray[0].value)
+            let subPackagesMap = MiniAppInfo_GetSubPackages(miniAppInfo).pointee
+            let buffer = UnsafeBufferPointer(start: subPackagesMap.mapEntries, count: Int(subPackagesMap.size))
+            self.subPackagesText = Array(buffer).map{
+                String(cString: $0.key) + ":" + String(cString: $0.value)
+            }.joined(separator: ";")
         }) {
             Text("GetSubPackages")
         }

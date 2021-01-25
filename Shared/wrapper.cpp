@@ -32,7 +32,11 @@ struct mapEntry {
     const char * key;
     const char * value;
 };
-const mapEntry * MiniAppInfo_GetSubPackages(const void * miniAppInfo) {
+struct cppMap {
+    unsigned long size;
+    mapEntry * mapEntries;
+};
+const cppMap * MiniAppInfo_GetSubPackages(const void * miniAppInfo) {
     map<string, string>& subPackages = ((MiniApp::MiniAppInfo *) miniAppInfo)->GetSubPackages();
     mapEntry * subPackagesArray = new mapEntry[subPackages.size()];
     auto index = 0;
@@ -43,7 +47,10 @@ const mapEntry * MiniAppInfo_GetSubPackages(const void * miniAppInfo) {
             .value = iter->second.c_str()
         };
     }
-    return subPackagesArray;
+    cppMap * data = new cppMap;
+    data->size = subPackages.size();
+    data->mapEntries = subPackagesArray;
+    return data;
 };
 }
 

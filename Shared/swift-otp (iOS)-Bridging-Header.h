@@ -12,4 +12,8 @@ struct mapEntry {
     const char * key;
     const char * value;
 };
-const struct mapEntry * MiniAppInfo_GetSubPackages(const void * miniAppInfo);
+struct cppMap {
+    unsigned long size;
+    struct mapEntry * mapEntries;
+};
+const struct cppMap * MiniAppInfo_GetSubPackages(const void * miniAppInfo);
