@@ -46,8 +46,6 @@
 		745D59DC25BAC19E00628248 /* swift-otp (macOS)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift-otp (macOS)-Bridging-Header.h"; sourceTree = "<group>"; };
 		745D59DD25BAC19E00628248 /* wrapper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = wrapper.cpp; sourceTree = "<group>"; };
 		745D5A4525BC534F00628248 /* libparse.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libparse.a; path = cpp/build/libparse.a; sourceTree = "<group>"; };
-		745D5A4F25BC53A700628248 /* Parse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Parse.h; path = cpp/Parse.h; sourceTree = SOURCE_ROOT; };
-		745D5A5025BC53A700628248 /* MiniAppInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MiniAppInfo.h; path = cpp/MiniAppInfo.h; sourceTree = SOURCE_ROOT; };
 		E519E09CDC4ECE3389455B1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E519E0DE08A68886533724DA /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		E519E10A2EF8171FC822764C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -141,8 +139,6 @@
 		E519E6BC51B92829831A53AC /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				745D5A5025BC53A700628248 /* MiniAppInfo.h */,
-				745D5A4F25BC53A700628248 /* Parse.h */,
 				E519E09CDC4ECE3389455B1C /* Assets.xcassets */,
 				E519EBA88DB40A5284188E53 /* swift_otpApp.swift */,
 				E519E10A2EF8171FC822764C /* ContentView.swift */,
@@ -585,6 +581,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 8P2XXQ9X7G;
 				ENABLE_PREVIEWS = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/cpp";
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -636,6 +633,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 8P2XXQ9X7G;
 				ENABLE_PREVIEWS = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/cpp";
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
