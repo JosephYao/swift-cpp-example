@@ -4,11 +4,14 @@
 #include <memory>
 #include <string>
 #include "MiniAppInfo.h"
+#include <filesystem>
+
+using namespace std;
 
 namespace MiniApp {
     class Parse {
     public:
-        static std::shared_ptr<MiniAppInfo> ParseFile(const std::string& path);
+        static shared_ptr<MiniAppInfo> ParseFile(const __fs::filesystem::path& path);
     };
 }
 

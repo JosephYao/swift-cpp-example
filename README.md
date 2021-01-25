@@ -5,7 +5,7 @@ This repo is an example about how swift can call cpp code. It also includes the 
 cd cpp
 mkdir build
 cd build
-cmake .. -G Xcode -DCMAKE_TOOLCHAIN_FILE=../../ios.toolchain.cmake -DPLATFORM=SIMULATOR64
+cmake .. -G Xcode -DCMAKE_TOOLCHAIN_FILE=../../ios.toolchain.cmake -DPLATFORM=SIMULATOR64 -DDEPLOYMENT_TARGET=13.0
 cmake --build . --config Debug
 ```
 

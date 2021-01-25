@@ -2,7 +2,7 @@
 
 namespace MiniApp {
 
-    std::shared_ptr<MiniAppInfo> Parse::ParseFile(const std::string& path) {
+    shared_ptr<MiniAppInfo> Parse::ParseFile(const __fs::filesystem::path& path) {
         return std::make_shared<MiniAppInfo>();
     }
 }
