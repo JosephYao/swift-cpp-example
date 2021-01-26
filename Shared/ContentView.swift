@@ -16,8 +16,7 @@ struct ContentView: View {
     var body: some View {
         Text(appPathText)
         Button(action: {
-            let miniAppInfo = MiniAppInfo_ParseFile("path")
-            self.appPathText = String(cString: MiniAppInfo_GetAppPath(miniAppInfo))
+            self.appPathText = MiniAppInfo.parse(path: "path").getAppPath()
         }) {
             Text("GetAppPath")
         }
