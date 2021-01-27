@@ -13,10 +13,14 @@ struct ContentView: View {
     @State var routerEntryText = "Please get or set router entry";
     @State var subPackagesText = "";
 
+    init() {
+        MiniAppInfo.parse(path: "path")
+    }
+
     var body: some View {
         Text(appPathText)
         Button(action: {
-            self.appPathText = MiniAppInfo.parse(path: "path").getAppPath()
+            self.appPathText = MiniAppInfo.getInstance().getAppPath()
         }) {
             Text("GetAppPath")
         }
@@ -29,7 +33,7 @@ struct ContentView: View {
         }
         Text(routerEntryText)
         Button(action: {
-            self.routerEntryText = MiniAppInfo.parse(path: "path").getRouterInfo().getEntry()
+            self.routerEntryText = MiniAppInfo.getInstance().getRouterInfo().getEntry()
         }) {
             Text("GetRouterEntry")
         }

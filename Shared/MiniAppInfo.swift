@@ -8,12 +8,19 @@ class MiniAppInfo {
 
     private var miniAppInfoP: UnsafeRawPointer?;
 
+    private static var rpkPath: String?
+
     init(miniAppInfoP: UnsafeRawPointer?) {
         self.miniAppInfoP = miniAppInfoP
     }
 
     static func parse(path: String) -> MiniAppInfo {
-        MiniAppInfo(miniAppInfoP: MiniAppInfo_ParseFile(path))
+        rpkPath = path
+        return getInstance()
+    }
+
+    static func getInstance() -> MiniAppInfo {
+        MiniAppInfo(miniAppInfoP: MiniAppInfo_ParseFile(rpkPath))
     }
 
     func getAppPath() -> String {
