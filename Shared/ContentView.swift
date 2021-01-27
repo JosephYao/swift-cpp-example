@@ -20,7 +20,7 @@ struct ContentView: View {
     var body: some View {
         Text(appPathText)
         Button(action: {
-            self.appPathText = MiniAppInfo.getInstance().getAppPath()
+            self.appPathText = OcMiniAppInfo.parse("path").getAppPath()
         }) {
             Text("GetAppPath")
         }

@@ -11,12 +11,15 @@
 		745D59DF25BAC19E00628248 /* wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 745D59DD25BAC19E00628248 /* wrapper.cpp */; };
 		74B6AA1725BF0AE2003C06C0 /* libparse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B6AA1625BF0AE2003C06C0 /* libparse.a */; };
 		E519E09C5DB17DD67E45F5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E519E09CDC4ECE3389455B1C /* Assets.xcassets */; };
+		E519E143FF9FAFDDE874AFD1 /* OcMiniAppInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = E519EDB3003091904C758274 /* OcMiniAppInfo.mm */; };
 		E519E16FFF65FC85F217FFD2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E519E76FC43A895F3092AA1D /* README.md */; };
 		E519E1DD47A2E475E3E6D310 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E10A2EF8171FC822764C /* ContentView.swift */; };
 		E519E1FFD97A8D01AC1A378E /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E83A3706A23C1B54A753 /* Tests_iOS.swift */; };
+		E519E242A12677EBD4AC60AE /* OcMiniAppInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = E519EDB3003091904C758274 /* OcMiniAppInfo.mm */; };
 		E519E3293998EBEEF10634BD /* RouterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519EB82C6523E9D36BE2579 /* RouterInfo.swift */; };
 		E519E4B28A9A805DC31EBEEB /* RouterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519EB82C6523E9D36BE2579 /* RouterInfo.swift */; };
 		E519E5D9C1027C4AECB45E88 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E519E76FC43A895F3092AA1D /* README.md */; };
+		E519E6FC2968C09634CB29CA /* OcMiniAppInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = E519EDB3003091904C758274 /* OcMiniAppInfo.mm */; };
 		E519E7E032BA6DF24675FA8C /* swift_otpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519EBA88DB40A5284188E53 /* swift_otpApp.swift */; };
 		E519E93C81B318A09B15DAD4 /* MiniAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E2C86143F394DE771DDD /* MiniAppInfo.swift */; };
 		E519E9449C872039A45C60BE /* MiniAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E2C86143F394DE771DDD /* MiniAppInfo.swift */; };
@@ -29,6 +32,7 @@
 		E519ED70F8492919F657AA7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E519E09CDC4ECE3389455B1C /* Assets.xcassets */; };
 		E519ED9DF53495F2DFAB80A1 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E519E76FC43A895F3092AA1D /* README.md */; };
 		E519EEA109E3BCAB5DBE2147 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E519E76FC43A895F3092AA1D /* README.md */; };
+		E519EED2B189FC3BF5638FC3 /* OcMiniAppInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = E519EDB3003091904C758274 /* OcMiniAppInfo.mm */; };
 		E519EF9080898FD4EC775F2C /* swift_otpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519EBA88DB40A5284188E53 /* swift_otpApp.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +60,7 @@
 		74B6AA1625BF0AE2003C06C0 /* libparse.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libparse.a; path = "cpp/build/Debug-iphonesimulator/libparse.a"; sourceTree = "<group>"; };
 		E519E09CDC4ECE3389455B1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E519E0DE08A68886533724DA /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		E519E1069F911B92DC1C0952 /* OcMiniAppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OcMiniAppInfo.h; sourceTree = "<group>"; };
 		E519E10A2EF8171FC822764C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E519E17DD4432F3FEED53A55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		E519E2C86143F394DE771DDD /* MiniAppInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniAppInfo.swift; sourceTree = "<group>"; };
@@ -70,6 +75,7 @@
 		E519EAE9D34644EEA2C5DF07 /* swift-otp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-otp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E519EB82C6523E9D36BE2579 /* RouterInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterInfo.swift; sourceTree = "<group>"; };
 		E519EBA88DB40A5284188E53 /* swift_otpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_otpApp.swift; sourceTree = "<group>"; };
+		E519EDB3003091904C758274 /* OcMiniAppInfo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OcMiniAppInfo.mm; sourceTree = "<group>"; };
 		E519EDB49C6B7B75DF34C6CB /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -157,6 +163,8 @@
 				745D59DC25BAC19E00628248 /* swift-otp (macOS)-Bridging-Header.h */,
 				E519E2C86143F394DE771DDD /* MiniAppInfo.swift */,
 				E519EB82C6523E9D36BE2579 /* RouterInfo.swift */,
+				E519EDB3003091904C758274 /* OcMiniAppInfo.mm */,
+				E519E1069F911B92DC1C0952 /* OcMiniAppInfo.h */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -353,6 +361,7 @@
 				E519EEA109E3BCAB5DBE2147 /* README.md in Sources */,
 				E519E93C81B318A09B15DAD4 /* MiniAppInfo.swift in Sources */,
 				E519E3293998EBEEF10634BD /* RouterInfo.swift in Sources */,
+				E519E242A12677EBD4AC60AE /* OcMiniAppInfo.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +373,7 @@
 				E519E5D9C1027C4AECB45E88 /* README.md in Sources */,
 				E519E9BB7DAADEEC8524538C /* MiniAppInfo.swift in Sources */,
 				E519ECA94A3B9AC542E3C095 /* RouterInfo.swift in Sources */,
+				E519EED2B189FC3BF5638FC3 /* OcMiniAppInfo.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +387,7 @@
 				E519E16FFF65FC85F217FFD2 /* README.md in Sources */,
 				E519EB601E8152D430479B48 /* MiniAppInfo.swift in Sources */,
 				E519EB6CFA25F8972795F9A5 /* RouterInfo.swift in Sources */,
+				E519E6FC2968C09634CB29CA /* OcMiniAppInfo.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +401,7 @@
 				E519ED9DF53495F2DFAB80A1 /* README.md in Sources */,
 				E519E9449C872039A45C60BE /* MiniAppInfo.swift in Sources */,
 				E519E4B28A9A805DC31EBEEB /* RouterInfo.swift in Sources */,
+				E519E143FF9FAFDDE874AFD1 /* OcMiniAppInfo.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +533,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -573,6 +586,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -601,6 +615,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 8P2XXQ9X7G;
 				ENABLE_PREVIEWS = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/cpp";
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -653,6 +668,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 8P2XXQ9X7G;
 				ENABLE_PREVIEWS = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/cpp";
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
