@@ -29,8 +29,7 @@ struct ContentView: View {
         }
         Text(routerEntryText)
         Button(action: {
-            let routerInfo = MiniAppInfo_GetRouterInfo(MiniAppInfo_ParseFile("path"))
-            self.routerEntryText = String(cString: RouterInfo_GetEntry(routerInfo))
+            self.routerEntryText = MiniAppInfo.parse(path: "path").getRouterInfo().getEntry()
         }) {
             Text("GetRouterEntry")
         }

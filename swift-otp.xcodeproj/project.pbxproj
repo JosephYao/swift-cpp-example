@@ -14,6 +14,8 @@
 		E519E16FFF65FC85F217FFD2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E519E76FC43A895F3092AA1D /* README.md */; };
 		E519E1DD47A2E475E3E6D310 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E10A2EF8171FC822764C /* ContentView.swift */; };
 		E519E1FFD97A8D01AC1A378E /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E83A3706A23C1B54A753 /* Tests_iOS.swift */; };
+		E519E3293998EBEEF10634BD /* RouterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519EB82C6523E9D36BE2579 /* RouterInfo.swift */; };
+		E519E4B28A9A805DC31EBEEB /* RouterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519EB82C6523E9D36BE2579 /* RouterInfo.swift */; };
 		E519E5D9C1027C4AECB45E88 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E519E76FC43A895F3092AA1D /* README.md */; };
 		E519E7E032BA6DF24675FA8C /* swift_otpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519EBA88DB40A5284188E53 /* swift_otpApp.swift */; };
 		E519E93C81B318A09B15DAD4 /* MiniAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E2C86143F394DE771DDD /* MiniAppInfo.swift */; };
@@ -22,6 +24,8 @@
 		E519E9BDD506E88985FAFE58 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E40824AFE2FAB5327011 /* Tests_macOS.swift */; };
 		E519EA9A10298B2ED501EB01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E10A2EF8171FC822764C /* ContentView.swift */; };
 		E519EB601E8152D430479B48 /* MiniAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E2C86143F394DE771DDD /* MiniAppInfo.swift */; };
+		E519EB6CFA25F8972795F9A5 /* RouterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519EB82C6523E9D36BE2579 /* RouterInfo.swift */; };
+		E519ECA94A3B9AC542E3C095 /* RouterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519EB82C6523E9D36BE2579 /* RouterInfo.swift */; };
 		E519ED70F8492919F657AA7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E519E09CDC4ECE3389455B1C /* Assets.xcassets */; };
 		E519ED9DF53495F2DFAB80A1 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E519E76FC43A895F3092AA1D /* README.md */; };
 		E519EEA109E3BCAB5DBE2147 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E519E76FC43A895F3092AA1D /* README.md */; };
@@ -64,6 +68,7 @@
 		E519E83A3706A23C1B54A753 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		E519E94CED243B1AC0F1366F /* swift-otp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-otp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E519EAE9D34644EEA2C5DF07 /* swift-otp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-otp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E519EB82C6523E9D36BE2579 /* RouterInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterInfo.swift; sourceTree = "<group>"; };
 		E519EBA88DB40A5284188E53 /* swift_otpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_otpApp.swift; sourceTree = "<group>"; };
 		E519EDB49C6B7B75DF34C6CB /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -151,6 +156,7 @@
 				745D59DB25BAC19E00628248 /* swift-otp (iOS)-Bridging-Header.h */,
 				745D59DC25BAC19E00628248 /* swift-otp (macOS)-Bridging-Header.h */,
 				E519E2C86143F394DE771DDD /* MiniAppInfo.swift */,
+				E519EB82C6523E9D36BE2579 /* RouterInfo.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -346,6 +352,7 @@
 				E519E1FFD97A8D01AC1A378E /* Tests_iOS.swift in Sources */,
 				E519EEA109E3BCAB5DBE2147 /* README.md in Sources */,
 				E519E93C81B318A09B15DAD4 /* MiniAppInfo.swift in Sources */,
+				E519E3293998EBEEF10634BD /* RouterInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +363,7 @@
 				E519E9BDD506E88985FAFE58 /* Tests_macOS.swift in Sources */,
 				E519E5D9C1027C4AECB45E88 /* README.md in Sources */,
 				E519E9BB7DAADEEC8524538C /* MiniAppInfo.swift in Sources */,
+				E519ECA94A3B9AC542E3C095 /* RouterInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +376,7 @@
 				745D59DF25BAC19E00628248 /* wrapper.cpp in Sources */,
 				E519E16FFF65FC85F217FFD2 /* README.md in Sources */,
 				E519EB601E8152D430479B48 /* MiniAppInfo.swift in Sources */,
+				E519EB6CFA25F8972795F9A5 /* RouterInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +389,7 @@
 				745D59DE25BAC19E00628248 /* wrapper.cpp in Sources */,
 				E519ED9DF53495F2DFAB80A1 /* README.md in Sources */,
 				E519E9449C872039A45C60BE /* MiniAppInfo.swift in Sources */,
+				E519E4B28A9A805DC31EBEEB /* RouterInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

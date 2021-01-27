@@ -19,4 +19,8 @@ class MiniAppInfo {
     func getAppPath() -> String {
         String(cString: MiniAppInfo_GetAppPath(miniAppInfoP))
     }
+
+    func getRouterInfo() -> RouterInfo {
+        RouterInfo(routerInfoP: MiniAppInfo_GetRouterInfo(miniAppInfoP))
+    }
 }
