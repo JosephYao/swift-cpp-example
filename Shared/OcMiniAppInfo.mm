@@ -8,13 +8,21 @@
 using namespace std;
 using namespace MiniApp;
 
+static shared_ptr<MiniApp::MiniAppInfo> anotherP;
+
 @implementation OcMiniAppInfo {
 
 }
 + (OcMiniAppInfo *)parse:(NSString *)path {
     OcMiniAppInfo * ocMiniAppInfo = [OcMiniAppInfo new];
-    void * p = MiniApp::Parse::ParseFile(path.UTF8String).get();
-    ocMiniAppInfo.miniAppInfoP = p;
+    anotherP = MiniApp::Parse::ParseFile(path.UTF8String);
+    ocMiniAppInfo.miniAppInfoP = anotherP.get();
+    return ocMiniAppInfo;
+}
+
++ (OcMiniAppInfo *)getInstance {
+    OcMiniAppInfo * ocMiniAppInfo = [OcMiniAppInfo new];
+    ocMiniAppInfo.miniAppInfoP = anotherP.get();
     return ocMiniAppInfo;
 }
 

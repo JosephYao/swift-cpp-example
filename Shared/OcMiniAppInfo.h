@@ -7,6 +7,7 @@
 @interface OcMiniAppInfo : NSObject
 @property void * miniAppInfoP;
 + (OcMiniAppInfo *)parse:(NSString *)path;
++ (OcMiniAppInfo *)getInstance;
 - (NSString *)getAppPath;
 - (void)setAppPath:(NSString *)appPath;
 @end

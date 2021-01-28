@@ -13,15 +13,19 @@ struct ContentView: View {
     @State var routerEntryText = "Please get or set router entry";
     @State var subPackagesText = "";
 
+    init() {
+        OcMiniAppInfo.parse("path")
+    }
+
     var body: some View {
         Text(appPathText)
         Button(action: {
-            self.appPathText = OcMiniAppInfo.parse("path").getAppPath()
+            self.appPathText = OcMiniAppInfo.getInstance()!.getAppPath()
         }) {
             Text("GetAppPath")
         }
         Button(action: {
-            let miniAppInfo = OcMiniAppInfo.parse("path")!
+            let miniAppInfo = OcMiniAppInfo.getInstance()!
             miniAppInfo.setAppPath("newAppPath" + Int.random(in: 1..<100).description)
             self.appPathText = miniAppInfo.getAppPath()
         }) {
