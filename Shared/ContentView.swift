@@ -13,10 +13,6 @@ struct ContentView: View {
     @State var routerEntryText = "Please get or set router entry";
     @State var subPackagesText = "";
 
-    init() {
-        MiniAppInfo.parse(path: "path")
-    }
-
     var body: some View {
         Text(appPathText)
         Button(action: {
@@ -25,9 +21,9 @@ struct ContentView: View {
             Text("GetAppPath")
         }
         Button(action: {
-            let miniAppInfo = MiniAppInfo_ParseFile("path")
-            MiniAppInfo_SetAppPath(miniAppInfo, "newAppPath")
-            self.appPathText = String(cString: MiniAppInfo_GetAppPath(miniAppInfo))
+            let miniAppInfo = OcMiniAppInfo.parse("path")!
+            miniAppInfo.setAppPath("newAppPath" + Int.random(in: 1..<100).description)
+            self.appPathText = miniAppInfo.getAppPath()
         }) {
             Text("SetAppPath")
         }

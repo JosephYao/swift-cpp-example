@@ -8,4 +8,5 @@
 @property void * miniAppInfoP;
 + (OcMiniAppInfo *)parse:(NSString *)path;
 - (NSString *)getAppPath;
+- (void)setAppPath:(NSString *)appPath;
 @end

@@ -22,5 +22,10 @@ using namespace MiniApp;
     return @(((MiniApp::MiniAppInfo *)self.miniAppInfoP)->GetAppPath().c_str());
 }
 
+- (void)setAppPath:(NSString *)appPath {
+    string appPathStr = appPath.UTF8String;
+    ((MiniAppInfo * )self.miniAppInfoP)->SetAppPath(appPathStr);
+}
+
 
 @end
