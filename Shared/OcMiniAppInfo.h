@@ -12,4 +12,5 @@
 - (NSString *)getAppPath;
 - (void)setAppPath:(NSString *)appPath;
 - (OcRouterInfo *)getRouterInfo;
+- (NSMutableDictionary<NSString *, NSString *> *)getSubPackages;
 @end

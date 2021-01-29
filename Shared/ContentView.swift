@@ -46,11 +46,9 @@ struct ContentView: View {
         }
         Text(subPackagesText)
         Button(action: {
-            let miniAppInfo = MiniAppInfo_ParseFile("path")
-            let subPackagesMap = MiniAppInfo_GetSubPackages(miniAppInfo).pointee
-            let buffer = UnsafeBufferPointer(start: subPackagesMap.mapEntries, count: Int(subPackagesMap.size))
-            self.subPackagesText = Array(buffer).map{
-                String(cString: $0.key) + ":" + String(cString: $0.value)
+            let subPackagesMap = OcMiniAppInfo.getInstance().getSubPackages() as! Dictionary<String, String>
+            self.subPackagesText = subPackagesMap.map { (key, value) in
+                key + ":" + value
             }.joined(separator: ";")
         }) {
             Text("GetSubPackages")

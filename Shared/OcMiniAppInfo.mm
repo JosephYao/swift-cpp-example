@@ -42,5 +42,14 @@ static shared_ptr<MiniApp::MiniAppInfo> anotherP;
     return ocRouterInfo;
 }
 
+- (NSMutableDictionary<NSString *, NSString *> *)getSubPackages {
+    map<string, string>& subPackages = ((MiniApp::MiniAppInfo *) self.miniAppInfoP)->GetSubPackages();
+    NSMutableDictionary<NSString *, NSString *> *subPackageDic = [NSMutableDictionary new];
+    for(auto iter = subPackages.begin(); iter != subPackages.end(); ++iter)
+    {
+        [subPackageDic setValue:@(iter->second.c_str()) forKey:@(iter->first.c_str())];
+    }
+    return subPackageDic;
+}
 
 @end
