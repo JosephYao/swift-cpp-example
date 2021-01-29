@@ -8,4 +8,5 @@
 @interface OcRouterInfo : NSObject
 @property void * miniAppInfoP;
 - (NSString *)getEntry;
+- (void)setEntry:(NSString *)entry;
 @end

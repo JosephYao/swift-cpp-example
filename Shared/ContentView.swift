@@ -20,7 +20,7 @@ struct ContentView: View {
     var body: some View {
         Text(appPathText)
         Button(action: {
-            self.appPathText = OcMiniAppInfo.getInstance()!.getAppPath()
+            self.appPathText = OcMiniAppInfo.getInstance().getAppPath()
         }) {
             Text("GetAppPath")
         }
@@ -38,9 +38,9 @@ struct ContentView: View {
             Text("GetRouterEntry")
         }
         Button(action: {
-            let routerInfo = MiniAppInfo_GetRouterInfo(MiniAppInfo_ParseFile("path"))
-            RouterInfo_SetEntry(routerInfo, "newRouterEntry")
-            self.routerEntryText = String(cString: RouterInfo_GetEntry(routerInfo))
+            let routerInfo = OcMiniAppInfo.getInstance().getRouterInfo()!
+            routerInfo.setEntry("newRouterEntry" + Int.random(in: 1..<50).description)
+            self.routerEntryText = routerInfo.getEntry()
         }) {
             Text("SetRouterEntry")
         }

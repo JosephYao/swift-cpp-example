@@ -4,13 +4,24 @@
 
 #import <MiniAppInfo.h>
 #import "OcRouterInfo.h"
+#import "RouterInfo.h"
 
 
 @implementation OcRouterInfo {
 
 }
 - (NSString *)getEntry {
-    return @(((MiniApp::MiniAppInfo *)self.miniAppInfoP)->GetRouter()->GetEntry().c_str());
+    return @([self getRouterInfo]->GetEntry().c_str());
 }
+
+- (shared_ptr<MiniApp::RouterInfo>)getRouterInfo {
+    return ((MiniApp::MiniAppInfo *) self.miniAppInfoP)->GetRouter();
+}
+
+- (void)setEntry:(NSString *)entry {
+    string entryStr = entry.UTF8String;
+    [self getRouterInfo]->SetEntry(entryStr);
+}
+
 
 @end
