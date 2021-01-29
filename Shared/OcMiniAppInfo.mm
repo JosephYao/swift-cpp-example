@@ -4,6 +4,7 @@
 
 #import "OcMiniAppInfo.h"
 #include "Parse.h"
+#import "OcRouterInfo.h"
 
 using namespace std;
 using namespace MiniApp;
@@ -33,6 +34,12 @@ static shared_ptr<MiniApp::MiniAppInfo> anotherP;
 - (void)setAppPath:(NSString *)appPath {
     string appPathStr = appPath.UTF8String;
     ((MiniAppInfo * )self.miniAppInfoP)->SetAppPath(appPathStr);
+}
+
+- (OcRouterInfo *)getRouterInfo {
+    OcRouterInfo * ocRouterInfo = [OcRouterInfo new];
+    ocRouterInfo.miniAppInfoP = anotherP.get();
+    return ocRouterInfo;
 }
 
 

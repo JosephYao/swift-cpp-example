@@ -33,7 +33,7 @@ struct ContentView: View {
         }
         Text(routerEntryText)
         Button(action: {
-            self.routerEntryText = MiniAppInfo.getInstance().getRouterInfo().getEntry()
+            self.routerEntryText = OcMiniAppInfo.getInstance().getRouterInfo().getEntry()
         }) {
             Text("GetRouterEntry")
         }

@@ -3,6 +3,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "OcRouterInfo.h"
 
 @interface OcMiniAppInfo : NSObject
 @property void * miniAppInfoP;
@@ -10,4 +11,5 @@
 + (OcMiniAppInfo *)getInstance;
 - (NSString *)getAppPath;
 - (void)setAppPath:(NSString *)appPath;
+- (OcRouterInfo *)getRouterInfo;
 @end

@@ -17,10 +17,14 @@
 		E519E1FFD97A8D01AC1A378E /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E83A3706A23C1B54A753 /* Tests_iOS.swift */; };
 		E519E242A12677EBD4AC60AE /* OcMiniAppInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = E519EDB3003091904C758274 /* OcMiniAppInfo.mm */; };
 		E519E3293998EBEEF10634BD /* RouterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519EB82C6523E9D36BE2579 /* RouterInfo.swift */; };
+		E519E3C0F9C9DF0C55F856F1 /* OcRouterInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = E519EA5F8FB7901626EB3AA2 /* OcRouterInfo.mm */; };
+		E519E433CF72066E1B525C2C /* OcRouterInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = E519EA5F8FB7901626EB3AA2 /* OcRouterInfo.mm */; };
 		E519E4B28A9A805DC31EBEEB /* RouterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519EB82C6523E9D36BE2579 /* RouterInfo.swift */; };
+		E519E51EBB264D6F7A1D94E7 /* OcRouterInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = E519EA5F8FB7901626EB3AA2 /* OcRouterInfo.mm */; };
 		E519E5D9C1027C4AECB45E88 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E519E76FC43A895F3092AA1D /* README.md */; };
 		E519E6FC2968C09634CB29CA /* OcMiniAppInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = E519EDB3003091904C758274 /* OcMiniAppInfo.mm */; };
 		E519E7E032BA6DF24675FA8C /* swift_otpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519EBA88DB40A5284188E53 /* swift_otpApp.swift */; };
+		E519E87BE44205F3211EBFD1 /* OcRouterInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = E519EA5F8FB7901626EB3AA2 /* OcRouterInfo.mm */; };
 		E519E93C81B318A09B15DAD4 /* MiniAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E2C86143F394DE771DDD /* MiniAppInfo.swift */; };
 		E519E9449C872039A45C60BE /* MiniAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E2C86143F394DE771DDD /* MiniAppInfo.swift */; };
 		E519E9BB7DAADEEC8524538C /* MiniAppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E2C86143F394DE771DDD /* MiniAppInfo.swift */; };
@@ -72,7 +76,9 @@
 		E519E814BDE47198DDF9A283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		E519E83A3706A23C1B54A753 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		E519E94CED243B1AC0F1366F /* swift-otp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-otp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E519EA5F8FB7901626EB3AA2 /* OcRouterInfo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OcRouterInfo.mm; sourceTree = "<group>"; };
 		E519EAE9D34644EEA2C5DF07 /* swift-otp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-otp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E519EB19B496C93A54DD0D96 /* OcRouterInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OcRouterInfo.h; sourceTree = "<group>"; };
 		E519EB82C6523E9D36BE2579 /* RouterInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterInfo.swift; sourceTree = "<group>"; };
 		E519EBA88DB40A5284188E53 /* swift_otpApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_otpApp.swift; sourceTree = "<group>"; };
 		E519EDB3003091904C758274 /* OcMiniAppInfo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OcMiniAppInfo.mm; sourceTree = "<group>"; };
@@ -165,6 +171,8 @@
 				E519EB82C6523E9D36BE2579 /* RouterInfo.swift */,
 				E519EDB3003091904C758274 /* OcMiniAppInfo.mm */,
 				E519E1069F911B92DC1C0952 /* OcMiniAppInfo.h */,
+				E519EA5F8FB7901626EB3AA2 /* OcRouterInfo.mm */,
+				E519EB19B496C93A54DD0D96 /* OcRouterInfo.h */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -362,6 +370,7 @@
 				E519E93C81B318A09B15DAD4 /* MiniAppInfo.swift in Sources */,
 				E519E3293998EBEEF10634BD /* RouterInfo.swift in Sources */,
 				E519E242A12677EBD4AC60AE /* OcMiniAppInfo.mm in Sources */,
+				E519E51EBB264D6F7A1D94E7 /* OcRouterInfo.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +383,7 @@
 				E519E9BB7DAADEEC8524538C /* MiniAppInfo.swift in Sources */,
 				E519ECA94A3B9AC542E3C095 /* RouterInfo.swift in Sources */,
 				E519EED2B189FC3BF5638FC3 /* OcMiniAppInfo.mm in Sources */,
+				E519E433CF72066E1B525C2C /* OcRouterInfo.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +398,7 @@
 				E519EB601E8152D430479B48 /* MiniAppInfo.swift in Sources */,
 				E519EB6CFA25F8972795F9A5 /* RouterInfo.swift in Sources */,
 				E519E6FC2968C09634CB29CA /* OcMiniAppInfo.mm in Sources */,
+				E519E3C0F9C9DF0C55F856F1 /* OcRouterInfo.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +413,7 @@
 				E519E9449C872039A45C60BE /* MiniAppInfo.swift in Sources */,
 				E519E4B28A9A805DC31EBEEB /* RouterInfo.swift in Sources */,
 				E519E143FF9FAFDDE874AFD1 /* OcMiniAppInfo.mm in Sources */,
+				E519E87BE44205F3211EBFD1 /* OcRouterInfo.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
