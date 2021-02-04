@@ -7,11 +7,12 @@
 //
 
 import SwiftUI
-	
+
 struct ContentView: View {
     @State var appPathText = "Please get or set app path";
     @State var routerEntryText = "Please get or set router entry";
     @State var subPackagesText = "";
+    @ObservedObject var model = WebViewModel(link: "https://www.wikipedia.org/")
 
     init() {
         OcMiniAppInfo.parse("path")
@@ -52,6 +53,10 @@ struct ContentView: View {
             }.joined(separator: ";")
         }) {
             Text("GetSubPackages")
+        }
+
+        NavigationView {
+            SwiftUIWebView(viewModel: model)
         }
     }
 

@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		747A4ECD25C8ECAD009FB5B7 /* libv8_libbase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 747A4ECB25C8ECAC009FB5B7 /* libv8_libbase.a */; };
+		747A4ECE25C8ECAD009FB5B7 /* libv8_libplatform.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 747A4ECC25C8ECAD009FB5B7 /* libv8_libplatform.a */; };
 		74B6AA1725BF0AE2003C06C0 /* libparse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B6AA1625BF0AE2003C06C0 /* libparse.a */; };
 		E519E09C5DB17DD67E45F5E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E519E09CDC4ECE3389455B1C /* Assets.xcassets */; };
+		E519E0C90DD3BF97BED85261 /* SwiftUIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E28D1B824249217A43A1 /* SwiftUIWebView.swift */; };
 		E519E143FF9FAFDDE874AFD1 /* OcMiniAppInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = E519EDB3003091904C758274 /* OcMiniAppInfo.mm */; };
 		E519E16FFF65FC85F217FFD2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E519E76FC43A895F3092AA1D /* README.md */; };
 		E519E1DD47A2E475E3E6D310 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E10A2EF8171FC822764C /* ContentView.swift */; };
@@ -18,16 +21,23 @@
 		E519E433CF72066E1B525C2C /* OcRouterInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = E519EA5F8FB7901626EB3AA2 /* OcRouterInfo.mm */; };
 		E519E51EBB264D6F7A1D94E7 /* OcRouterInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = E519EA5F8FB7901626EB3AA2 /* OcRouterInfo.mm */; };
 		E519E5D9C1027C4AECB45E88 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E519E76FC43A895F3092AA1D /* README.md */; };
+		E519E5F09DD8BB4558D54F6F /* SwiftUIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E28D1B824249217A43A1 /* SwiftUIWebView.swift */; };
+		E519E5F76F1F79B8291A0719 /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E16779042FE6670C5DC3 /* WebViewModel.swift */; };
 		E519E6FC2968C09634CB29CA /* OcMiniAppInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = E519EDB3003091904C758274 /* OcMiniAppInfo.mm */; };
+		E519E75A102A77C65104B0FB /* SwiftUIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E28D1B824249217A43A1 /* SwiftUIWebView.swift */; };
 		E519E7E032BA6DF24675FA8C /* swift_otpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519EBA88DB40A5284188E53 /* swift_otpApp.swift */; };
 		E519E87BE44205F3211EBFD1 /* OcRouterInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = E519EA5F8FB7901626EB3AA2 /* OcRouterInfo.mm */; };
+		E519E88A33EBE70D309CDFB5 /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E16779042FE6670C5DC3 /* WebViewModel.swift */; };
 		E519E9BDD506E88985FAFE58 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E40824AFE2FAB5327011 /* Tests_macOS.swift */; };
 		E519EA9A10298B2ED501EB01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E10A2EF8171FC822764C /* ContentView.swift */; };
 		E519ED70F8492919F657AA7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E519E09CDC4ECE3389455B1C /* Assets.xcassets */; };
 		E519ED9DF53495F2DFAB80A1 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E519E76FC43A895F3092AA1D /* README.md */; };
 		E519EEA109E3BCAB5DBE2147 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E519E76FC43A895F3092AA1D /* README.md */; };
 		E519EED2B189FC3BF5638FC3 /* OcMiniAppInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = E519EDB3003091904C758274 /* OcMiniAppInfo.mm */; };
+		E519EF348EBCDFFFE1A5BEB5 /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E16779042FE6670C5DC3 /* WebViewModel.swift */; };
+		E519EF601D01434FFB57E39C /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E16779042FE6670C5DC3 /* WebViewModel.swift */; };
 		E519EF9080898FD4EC775F2C /* swift_otpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519EBA88DB40A5284188E53 /* swift_otpApp.swift */; };
+		E519EFF52386C025CF54FD1A /* SwiftUIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E28D1B824249217A43A1 /* SwiftUIWebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,12 +60,16 @@
 /* Begin PBXFileReference section */
 		745D59DB25BAC19E00628248 /* swift-otp (iOS)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift-otp (iOS)-Bridging-Header.h"; sourceTree = "<group>"; };
 		745D59DC25BAC19E00628248 /* swift-otp (macOS)-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift-otp (macOS)-Bridging-Header.h"; sourceTree = "<group>"; };
+		747A4ECB25C8ECAC009FB5B7 /* libv8_libbase.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libv8_libbase.a; path = ../../../Downloads/v8_ios_build_x64/libv8_libbase.a; sourceTree = "<group>"; };
+		747A4ECC25C8ECAD009FB5B7 /* libv8_libplatform.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libv8_libplatform.a; path = ../../../Downloads/v8_ios_build_x64/libv8_libplatform.a; sourceTree = "<group>"; };
 		74B6AA1625BF0AE2003C06C0 /* libparse.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libparse.a; path = "cpp/build/Debug-iphonesimulator/libparse.a"; sourceTree = "<group>"; };
 		E519E09CDC4ECE3389455B1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E519E0DE08A68886533724DA /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		E519E1069F911B92DC1C0952 /* OcMiniAppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OcMiniAppInfo.h; sourceTree = "<group>"; };
 		E519E10A2EF8171FC822764C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E519E16779042FE6670C5DC3 /* WebViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
 		E519E17DD4432F3FEED53A55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		E519E28D1B824249217A43A1 /* SwiftUIWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIWebView.swift; sourceTree = "<group>"; };
 		E519E40824AFE2FAB5327011 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		E519E4AD869A0E41E3BD36DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		E519E540F01ECA562C5BBA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -77,6 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				747A4ECD25C8ECAD009FB5B7 /* libv8_libbase.a in Frameworks */,
+				747A4ECE25C8ECAD009FB5B7 /* libv8_libplatform.a in Frameworks */,
 				74B6AA1725BF0AE2003C06C0 /* libparse.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,6 +124,8 @@
 		745D59CC25B9A37100628248 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				747A4ECB25C8ECAC009FB5B7 /* libv8_libbase.a */,
+				747A4ECC25C8ECAD009FB5B7 /* libv8_libplatform.a */,
 				74B6AA1625BF0AE2003C06C0 /* libparse.a */,
 			);
 			name = Frameworks;
@@ -157,6 +175,8 @@
 				E519E1069F911B92DC1C0952 /* OcMiniAppInfo.h */,
 				E519EA5F8FB7901626EB3AA2 /* OcRouterInfo.mm */,
 				E519EB19B496C93A54DD0D96 /* OcRouterInfo.h */,
+				E519E16779042FE6670C5DC3 /* WebViewModel.swift */,
+				E519E28D1B824249217A43A1 /* SwiftUIWebView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -353,6 +373,8 @@
 				E519EEA109E3BCAB5DBE2147 /* README.md in Sources */,
 				E519E242A12677EBD4AC60AE /* OcMiniAppInfo.mm in Sources */,
 				E519E51EBB264D6F7A1D94E7 /* OcRouterInfo.mm in Sources */,
+				E519E88A33EBE70D309CDFB5 /* WebViewModel.swift in Sources */,
+				E519E75A102A77C65104B0FB /* SwiftUIWebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +386,8 @@
 				E519E5D9C1027C4AECB45E88 /* README.md in Sources */,
 				E519EED2B189FC3BF5638FC3 /* OcMiniAppInfo.mm in Sources */,
 				E519E433CF72066E1B525C2C /* OcRouterInfo.mm in Sources */,
+				E519EF348EBCDFFFE1A5BEB5 /* WebViewModel.swift in Sources */,
+				E519E0C90DD3BF97BED85261 /* SwiftUIWebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +400,8 @@
 				E519E16FFF65FC85F217FFD2 /* README.md in Sources */,
 				E519E6FC2968C09634CB29CA /* OcMiniAppInfo.mm in Sources */,
 				E519E3C0F9C9DF0C55F856F1 /* OcRouterInfo.mm in Sources */,
+				E519EF601D01434FFB57E39C /* WebViewModel.swift in Sources */,
+				E519E5F09DD8BB4558D54F6F /* SwiftUIWebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +414,8 @@
 				E519ED9DF53495F2DFAB80A1 /* README.md in Sources */,
 				E519E143FF9FAFDDE874AFD1 /* OcMiniAppInfo.mm in Sources */,
 				E519E87BE44205F3211EBFD1 /* OcRouterInfo.mm in Sources */,
+				E519E5F76F1F79B8291A0719 /* WebViewModel.swift in Sources */,
+				E519EFF52386C025CF54FD1A /* SwiftUIWebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,7 +634,10 @@
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/cpp/build/Debug-iphonesimulator";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/cpp/build/Debug-iphonesimulator",
+					/Users/josephyao/Downloads/v8_ios_build_x64,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.odd-e.swift-otp";
 				PRODUCT_NAME = "swift-otp";
 				SDKROOT = iphoneos;
@@ -659,7 +690,10 @@
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/cpp/build/Debug-iphonesimulator";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/cpp/build/Debug-iphonesimulator",
+					/Users/josephyao/Downloads/v8_ios_build_x64,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.odd-e.swift-otp";
 				PRODUCT_NAME = "swift-otp";
 				SDKROOT = iphoneos;
