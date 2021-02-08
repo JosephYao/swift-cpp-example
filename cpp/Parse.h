@@ -11,7 +11,7 @@ using namespace std;
 namespace MiniApp {
     class Parse {
     public:
-        static shared_ptr<MiniAppInfo> ParseFile(const __fs::filesystem::path& path);
+        static shared_ptr<MiniAppInfo> ParseFile(const filesystem::path& path);
     };
 }
 
