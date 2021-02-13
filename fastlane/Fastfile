@@ -19,4 +19,8 @@ platform :ios do
   lane :tests do
     run_tests(scheme: "Tests_iOS")
   end
+
+  lane :build_for_simulator do
+    xcodebuild(scheme: "swift-otp", xcargs: "-sdk 'iphonesimulator14.4' -arch 'x86_64' BUILD_DIR='./build'")
+  end
 end
