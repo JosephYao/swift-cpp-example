@@ -1,0 +1,9 @@
+stages:
+  - test_and_build
+
+test:
+  stage: test_and_build
+  script:
+    - rvm use 2.5.1
+    - fastlane tests
+    - fastlane build_for_simulator
