@@ -4,8 +4,7 @@ stages:
 test:
   stage: test_and_build
   script:
-    - export PATH="~/.rvm/bin:$PATH"
-    - echo $PATH
+    - cd cpp && rm -rf build && mkdir build && cd build && cmake .. -G Xcode -DCMAKE_TOOLCHAIN_FILE=../iOS.cmake -DPLATFORM=SIMULATOR64 -DDEPLOYMENT_TARGET=13.0 && cmake --build . --config Debug && cd ../..
     - rvm use 2.5.1
     - fastlane tests
     - fastlane build_for_simulator
