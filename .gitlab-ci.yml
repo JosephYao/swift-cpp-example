@@ -9,5 +9,7 @@ test:
     - fastlane tests
     - fastlane build_for_simulator
   only:
-    - merge_requests
-    - master
+    refs:
+      - merge_requests
+    variables:
+      - $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "ios"
