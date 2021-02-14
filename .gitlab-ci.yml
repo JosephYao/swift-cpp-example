@@ -4,6 +4,7 @@ stages:
 test:
   stage: test_and_build
   script:
+    - export PATH="~/.rvm/bin:$PATH"
     - echo $PATH
     - rvm use 2.5.1
     - fastlane tests
