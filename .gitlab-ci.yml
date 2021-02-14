@@ -4,6 +4,7 @@ stages:
 test:
   stage: test_and_build
   script:
+    - echo $PATH
     - rvm use 2.5.1
     - fastlane tests
     - fastlane build_for_simulator
