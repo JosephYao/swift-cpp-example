@@ -8,3 +8,6 @@ test:
     - rvm use 2.5.1
     - fastlane tests
     - fastlane build_for_simulator
+  only:
+    - merge_requests
+    - master
