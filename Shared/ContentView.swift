@@ -55,11 +55,11 @@ struct ContentView: View {
             Text("GetSubPackages")
         }
         Button(action: {
-            let closure: () -> Void = {
-                print("swift code called")
+            let closure = { (instanceId: UnsafePointer<Int8>?, args: UnsafePointer<Int8>?) -> Void in
+                print("swift code called. instanceId: \(String(cString: instanceId!)), arg: \(String(cString: args!))")
             }
             RegisterDomRenderAction(closure)
-            iOSSdkDelegateWrapper().domRenderAction("", andArgs: "")
+            iOSSdkDelegateWrapper().domRenderAction("instanceId", andArgs: "args")
         }) {
             Text("CallSwiftFromCpp")
         }

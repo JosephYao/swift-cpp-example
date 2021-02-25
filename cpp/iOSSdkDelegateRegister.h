@@ -4,7 +4,7 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-void RegisterDomRenderAction(void (^domRenderAction)());
+void RegisterDomRenderAction(void (^domRenderAction)(const char*, const char*));
 
 #ifdef __cplusplus
 };
