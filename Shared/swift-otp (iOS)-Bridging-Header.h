@@ -4,3 +4,4 @@
 
 #import "OcMiniAppInfo.h"
 #import "iOSSdkDelegateRegister.h"
+#import "iOSSdkDelegateWrapper.h"

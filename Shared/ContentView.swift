@@ -59,6 +59,7 @@ struct ContentView: View {
                 print("swift code called")
             }
             RegisterDomRenderAction(closure)
+            iOSSdkDelegateWrapper().domRenderAction("", andArgs: "")
         }) {
             Text("CallSwiftFromCpp")
         }

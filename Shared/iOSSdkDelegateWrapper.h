@@ -7,4 +7,7 @@
 
 @interface iOSSdkDelegateWrapper : NSObject
 @property void * iOSSdkDelegate;
+- (iOSSdkDelegateWrapper *)init;
+- (void) domRenderAction: (NSString *) instanceId andArgs:(NSString *) args;
+- (void)dealloc;
 @end

@@ -6,6 +6,7 @@ using namespace std;
 
 class iOSSdkDelegate {
 
+public:
     void DomRenderAction(string instanceId, string args);
 
 };
