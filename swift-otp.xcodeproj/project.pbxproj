@@ -19,6 +19,7 @@
 		E519E242A12677EBD4AC60AE /* OcMiniAppInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = E519EDB3003091904C758274 /* OcMiniAppInfo.mm */; };
 		E519E3C0F9C9DF0C55F856F1 /* OcRouterInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = E519EA5F8FB7901626EB3AA2 /* OcRouterInfo.mm */; };
 		E519E433CF72066E1B525C2C /* OcRouterInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = E519EA5F8FB7901626EB3AA2 /* OcRouterInfo.mm */; };
+		E519E51A37F22BA3F71AF384 /* iOSSdkDelegateWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = E519E419F36ABDD905BFC64B /* iOSSdkDelegateWrapper.mm */; };
 		E519E51EBB264D6F7A1D94E7 /* OcRouterInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = E519EA5F8FB7901626EB3AA2 /* OcRouterInfo.mm */; };
 		E519E5D9C1027C4AECB45E88 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E519E76FC43A895F3092AA1D /* README.md */; };
 		E519E5F09DD8BB4558D54F6F /* SwiftUIWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E28D1B824249217A43A1 /* SwiftUIWebView.swift */; };
@@ -28,10 +29,13 @@
 		E519E7E032BA6DF24675FA8C /* swift_otpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519EBA88DB40A5284188E53 /* swift_otpApp.swift */; };
 		E519E87BE44205F3211EBFD1 /* OcRouterInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = E519EA5F8FB7901626EB3AA2 /* OcRouterInfo.mm */; };
 		E519E88A33EBE70D309CDFB5 /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E16779042FE6670C5DC3 /* WebViewModel.swift */; };
+		E519E997549BA4071E384E6C /* iOSSdkDelegateWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = E519E419F36ABDD905BFC64B /* iOSSdkDelegateWrapper.mm */; };
 		E519E9BDD506E88985FAFE58 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E40824AFE2FAB5327011 /* Tests_macOS.swift */; };
 		E519EA9A10298B2ED501EB01 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E10A2EF8171FC822764C /* ContentView.swift */; };
 		E519ED70F8492919F657AA7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E519E09CDC4ECE3389455B1C /* Assets.xcassets */; };
 		E519ED9DF53495F2DFAB80A1 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E519E76FC43A895F3092AA1D /* README.md */; };
+		E519EDC79359D005991DBED1 /* iOSSdkDelegateWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = E519E419F36ABDD905BFC64B /* iOSSdkDelegateWrapper.mm */; };
+		E519EDFC111AB701E1969237 /* iOSSdkDelegateWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = E519E419F36ABDD905BFC64B /* iOSSdkDelegateWrapper.mm */; };
 		E519EEA109E3BCAB5DBE2147 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E519E76FC43A895F3092AA1D /* README.md */; };
 		E519EED2B189FC3BF5638FC3 /* OcMiniAppInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = E519EDB3003091904C758274 /* OcMiniAppInfo.mm */; };
 		E519EF348EBCDFFFE1A5BEB5 /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E519E16779042FE6670C5DC3 /* WebViewModel.swift */; };
@@ -71,8 +75,10 @@
 		E519E17DD4432F3FEED53A55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		E519E28D1B824249217A43A1 /* SwiftUIWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUIWebView.swift; sourceTree = "<group>"; };
 		E519E40824AFE2FAB5327011 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		E519E419F36ABDD905BFC64B /* iOSSdkDelegateWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = iOSSdkDelegateWrapper.mm; sourceTree = "<group>"; };
 		E519E4AD869A0E41E3BD36DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		E519E540F01ECA562C5BBA26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		E519E5E1823AF57A9D8E13C0 /* iOSSdkDelegateWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSSdkDelegateWrapper.h; sourceTree = "<group>"; };
 		E519E60C285B00451168E97E /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E519E76FC43A895F3092AA1D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E519E814BDE47198DDF9A283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -177,6 +183,8 @@
 				E519EB19B496C93A54DD0D96 /* OcRouterInfo.h */,
 				E519E16779042FE6670C5DC3 /* WebViewModel.swift */,
 				E519E28D1B824249217A43A1 /* SwiftUIWebView.swift */,
+				E519E419F36ABDD905BFC64B /* iOSSdkDelegateWrapper.mm */,
+				E519E5E1823AF57A9D8E13C0 /* iOSSdkDelegateWrapper.h */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -375,6 +383,7 @@
 				E519E51EBB264D6F7A1D94E7 /* OcRouterInfo.mm in Sources */,
 				E519E88A33EBE70D309CDFB5 /* WebViewModel.swift in Sources */,
 				E519E75A102A77C65104B0FB /* SwiftUIWebView.swift in Sources */,
+				E519EDC79359D005991DBED1 /* iOSSdkDelegateWrapper.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +397,7 @@
 				E519E433CF72066E1B525C2C /* OcRouterInfo.mm in Sources */,
 				E519EF348EBCDFFFE1A5BEB5 /* WebViewModel.swift in Sources */,
 				E519E0C90DD3BF97BED85261 /* SwiftUIWebView.swift in Sources */,
+				E519E997549BA4071E384E6C /* iOSSdkDelegateWrapper.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +412,7 @@
 				E519E3C0F9C9DF0C55F856F1 /* OcRouterInfo.mm in Sources */,
 				E519EF601D01434FFB57E39C /* WebViewModel.swift in Sources */,
 				E519E5F09DD8BB4558D54F6F /* SwiftUIWebView.swift in Sources */,
+				E519E51A37F22BA3F71AF384 /* iOSSdkDelegateWrapper.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +427,7 @@
 				E519E87BE44205F3211EBFD1 /* OcRouterInfo.mm in Sources */,
 				E519E5F76F1F79B8291A0719 /* WebViewModel.swift in Sources */,
 				E519EFF52386C025CF54FD1A /* SwiftUIWebView.swift in Sources */,
+				E519EDFC111AB701E1969237 /* iOSSdkDelegateWrapper.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -3,3 +3,4 @@
 //
 
 #import "OcMiniAppInfo.h"
+#import "iOSSdkDelegateRegister.h"

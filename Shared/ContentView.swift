@@ -54,6 +54,14 @@ struct ContentView: View {
         }) {
             Text("GetSubPackages")
         }
+        Button(action: {
+            let closure: () -> Void = {
+                print("swift code called")
+            }
+            RegisterDomRenderAction(closure)
+        }) {
+            Text("CallSwiftFromCpp")
+        }
 
         NavigationView {
             SwiftUIWebView(viewModel: model)
