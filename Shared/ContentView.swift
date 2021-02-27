@@ -55,18 +55,29 @@ struct ContentView: View {
             Text("GetSubPackages")
         }
         Button(action: {
+            let closure = { (instanceId: String?, ref: String?, dom: String?, index: String?, callback: String?) -> Void in
+                print("swift code called. instanceId: \(instanceId), ref: \(ref), dom: \(dom), index: \(index), callback: \(callback)")
+            }
+            let wrapper = iOSSdkDelegateWrapper()
+            wrapper!.registerCallAddElement(closure)
+            wrapper!.callAddElement("instanceId", andRef: "ref", andDom: "dom", andIndex: "index", andCallback: "callback")
+        }) {
+            Text("CallSwiftFromCpp_RegisteredByOcWrapper")
+        }
+
+        Button(action: {
             let closure = { (instanceId: UnsafePointer<Int8>?, args: UnsafePointer<Int8>?) -> Void in
                 print("swift code called. instanceId: \(String(cString: instanceId!)), arg: \(String(cString: args!))")
             }
             RegisterDomRenderAction(closure)
             iOSSdkDelegateWrapper().domRenderAction("instanceId", andArgs: "args")
         }) {
-            Text("CallSwiftFromCpp")
+            Text("CallSwiftFromCpp_RegisteredByCFunction")
         }
 
-        NavigationView {
-            SwiftUIWebView(viewModel: model)
-        }
+//        NavigationView {
+//            SwiftUIWebView(viewModel: model)
+//        }
     }
 
 }
